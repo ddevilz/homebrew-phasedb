@@ -5,20 +5,20 @@
 class Phasedb < Formula
   desc "Expand-contract migration coordinator"
   homepage "https://github.com/ddevilz/phasedb"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.0/phasedb_0.1.0_darwin_amd64.tar.gz"
-      sha256 "73668cee0ae7d0fe46fa03a33bcff273b1b1c75ae8bffb80801497e2e6398967"
+      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.1/phasedb_0.1.1_darwin_amd64.tar.gz"
+      sha256 "d8b108ef3ce50e00296b798d0fdbfeaa7ca83a82ddb38b1fe6db8cd0bd3fe6b2"
 
       define_method(:install) do
         bin.install "phasedb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.0/phasedb_0.1.0_darwin_arm64.tar.gz"
-      sha256 "635efa5eec2ee7289a218c784a7cda28efe9239653c2f781007f7cc774ae4aec"
+      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.1/phasedb_0.1.1_darwin_arm64.tar.gz"
+      sha256 "f95650bbec601172e5f6f5e0232e8192599a1ea3bfa3d79cbfe33065bce3b56c"
 
       define_method(:install) do
         bin.install "phasedb"
@@ -28,15 +28,15 @@ class Phasedb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.0/phasedb_0.1.0_linux_amd64.tar.gz"
-      sha256 "d1c85af945156e6d4e08796a248f6d5195e0090f3a3f053d479e6e44e1cef76f"
+      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.1/phasedb_0.1.1_linux_amd64.tar.gz"
+      sha256 "dc65a414b223299dc2cc971886d907e859ba2be2595c41cfd5acc8a075c22736"
       define_method(:install) do
         bin.install "phasedb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.0/phasedb_0.1.0_linux_arm64.tar.gz"
-      sha256 "2fb8ae4fe2672eaaa17d32e7290e031a106fb4885e30f5ab8c55fc705403883e"
+      url "https://github.com/ddevilz/phasedb/releases/download/v0.1.1/phasedb_0.1.1_linux_arm64.tar.gz"
+      sha256 "612f704daf128aa7f1c691189a4a571f977363e7bc10959a94fd9b20cb179715"
       define_method(:install) do
         bin.install "phasedb"
       end
